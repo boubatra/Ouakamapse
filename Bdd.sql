@@ -1,0 +1,5 @@
+CREATE OR REPLACE DATABASE Projet_schema;
+
+CREATE TABLE seance('
+
+');
