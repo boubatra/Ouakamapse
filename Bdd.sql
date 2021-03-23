@@ -22,3 +22,9 @@ CREATE TABLE Participant(
     Adresse_mail STRING,
     Localisation STRING
 );
+
+CREATE TABLE Professeur();
+CREATE TABLE Eleve();
+CREATE TABLE Classe();
+CREATE TABLE Matiere();
+CREATE TABLE Liste_Presence();
