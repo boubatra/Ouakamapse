@@ -53,6 +53,5 @@ CREATE TABLE Liste_Presence(
     Id_Liste VARCHAR(20) PRIMARY KEY,
     Adresse_Mail VARCHAR(20) ,
     Id_Classe VARCHAR(20),
-    Id_Matiere VARCHAR(20), 
-    gh INTEGER
+    Id_Matiere VARCHAR(20)
 );
