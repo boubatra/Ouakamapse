@@ -7,6 +7,7 @@ CREATE TABLE Seance(
     Partage_ecran INTEGER,
     Note INTEGER,
     Qualite VARCHAR(20),
+    
     Nb_interaction INTEGER
 );
 
