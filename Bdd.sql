@@ -1,9 +1,9 @@
 CREATE OR REPLACE DATABASE Projet_schema;
 
 CREATE TABLE Seance(
-    Id_Conference STRING primary key,
-    Date_debut DATE,
-    Date_fin DATE,
+    Id_Conference VARCHAR(20) primary key,
+    Date_debut DATETIME,
+    Date_fin DATETIME,
     Partage_ecran INTEGER,
     Note INTEGER,
     Qualite STRING,
@@ -11,16 +11,16 @@ CREATE TABLE Seance(
 );
 
 CREATE TABLE Classe(
-    Id_classe STRING primary key,
+    Id_classe VARCHAR(20) primary key,
     Effectif INTEGER
 );
 
 CREATE TABLE Participant(
     Nb_Connexion_Deconnexion INTEGER,
     Duree_Moyenne_Presence INTEGER,
-    Type_terminal STRING,
-    Adresse_mail STRING,
-    Localisation STRING
+    Type_terminal VARCHAR(20),
+    Adresse_mail VARCHAR(20),
+    Localisation VARCHAR(20)
 );
 
 CREATE TABLE Professeur();
