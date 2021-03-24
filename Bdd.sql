@@ -54,5 +54,4 @@ CREATE TABLE Liste_Presence(
     Adresse_Mail VARCHAR(20) ,
     Id_Classe VARCHAR(20),
     Id_Matiere VARCHAR(20),
-    pid INTEGER
 );
