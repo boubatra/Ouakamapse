@@ -1,0 +1,10 @@
+{
+    "name" :"extension chrome",
+    "version" :"1.0",
+    "description" :"Plugin Google meet",
+    "browser_action" :
+        {
+            "default_icon" : "icone.png",
+            "popup" :"plugin.html"
+        }
+    }
