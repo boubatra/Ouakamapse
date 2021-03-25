@@ -1,19 +1,5 @@
 CREATE DATABASE Projet_schema;
 
-<<<<<<< HEAD
-CREATE TABLE seance(
-    conference_id varchar(6) NOT NULL PRIMARY KEY,
-    --Date_debut
-    --Date_fin
-    screencast_recv_seconds integer(6),
-    note integer(2),
-    qualite varchar(50),
-    
-
-
-
-);     
-=======
 CREATE TABLE Seance(
     Id_Conference VARCHAR(20) primary key,
     Date_debut DATETIME,
@@ -26,7 +12,7 @@ CREATE TABLE Seance(
 );
 
 CREATE TABLE Classe(
-    Id_classe VARCHAR(20) primary key,
+    Id_Classe VARCHAR(20) primary key,
     Effectif INTEGER
 );
 
@@ -70,4 +56,3 @@ CREATE TABLE Liste_Presence(
     Id_Classe VARCHAR(20),
     Id_Matiere VARCHAR(20),
 );
->>>>>>> f37c35123faa412e1542b577040a5cd5ccb3f3b0
