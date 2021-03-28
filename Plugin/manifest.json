@@ -11,7 +11,7 @@
       "content_scripts": [
         {
           "matches": ["https://meet.google.com/*"],
-          "run_at": "document_start",
+          "run_at": "document_idle",
           "js": ["background.js","popup.js"]
         }
       ],
@@ -21,5 +21,15 @@
             "default_icon" : "icone.png",
             "default_popup" :"popup.html"
         },
+        "icons": {
+          "16": "liste_presence.png",
+          "48": "liste_presence.png",
+          "128": "liste_presence.png"
+        },
+        "storage": {
+            "managed_schema": "schema.json"
+        },
+        "content_security_policy": "script-src 'self'; object-src 'self' https://meet.google.com/",
         "permissions": ["storage","contextMenus","webRequest","activeTab","tabs", "https://meet.google.com/*"]
+        
     }

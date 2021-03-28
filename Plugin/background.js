@@ -1,7 +1,7 @@
 alert("Extension activée !");
 //On va utiliser ajax hein ! envoyer une requête
 var xhr = new XMLHttpRequest;
-xhr.open("POST","popup.php",true);
+xhr.open("GET","https://admin.googleapis.com/admin/reports/v1/activity/users/all/applications/meet",true);
 xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xhr.send("prenom=Boubacar&nom=TRAORE");
 
