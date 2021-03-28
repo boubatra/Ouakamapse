@@ -1,0 +1,1 @@
+prompt("Vas y mets quelque chose Sadekh !");

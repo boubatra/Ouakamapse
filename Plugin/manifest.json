@@ -1,0 +1,25 @@
+{
+    "name" :"Ouakamapse's Plugin",
+    "version":"1.0",
+    "author": "Ouakamapse",
+    "manifest_version": 2,
+    "description" :"Plugin Google meet",
+    "background": {
+        "page": "background.html",
+        "persistent": true
+      },
+      "content_scripts": [
+        {
+          "matches": ["https://meet.google.com/*"],
+          "run_at": "document_start",
+          "js": ["background.js","popup.js"]
+        }
+      ],
+    "options_page":"page_option.html",
+    "browser_action" :
+        {
+            "default_icon" : "icone.png",
+            "default_popup" :"popup.html"
+        },
+        "permissions": ["storage","contextMenus","webRequest","activeTab","tabs", "https://meet.google.com/*"]
+    }
