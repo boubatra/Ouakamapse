@@ -1,0 +1,8 @@
+{
+    "type": "object",
+    
+    "Conference_id": {
+        "$ref": "manifest.json",
+        "type": "string"
+      }
+}
