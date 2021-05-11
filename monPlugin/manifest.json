@@ -1,0 +1,23 @@
+{
+    "name":"Ouakamapse extension",
+    "description":"Plugin google meet",
+    "version":"0.1.0",
+    "manifest_version":2,
+    "icons":{
+        "16":"O-16x16.png",
+        "32":"O-32x32.png",
+        "48":"O-48x48.png",
+        "128":"O-128x128.png"
+    },
+    "background": {
+        "scripts":["./background.js"]
+    },
+    "options_page":"./options.html",
+    "browser_action":{
+        "default_popup":"./connexion.html"
+    },
+    "permissions":[
+        "tabs",
+        "https://www.google.com/*"
+    ]
+}
